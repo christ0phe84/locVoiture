@@ -1,52 +1,29 @@
-
-
-function creationVoiture (){
-
-    $.ajax({
-
-        url:"localhost/location.php",
-        type:"POST",
-        data:{
-            voiture: $('#voiture').value,
-            immat: $('#immat').value,
-        },
-
-        success: function success (result){
-
-            alert(result);
-        },
-
-        error: function error (error){
-
-
-        }
-
-
-    });
-
+function creationVoiture() {
+  $.ajax({
+    url: "http://localhost/location.php",
+    type: "POST",
+    data: {
+      voiture: $("#voiture").val(),
+      immat: $("#immat").val()
+    },
+    success: function success(result) {
+      console.log("Coucou");
+      alert(result);
+    },
+    error: function error(error) {}
+  });
 }
 
-function reservation (){
+function reservation() {
+  $.ajax({
+    url: "",
+    type: "POST",
+    data: {},
 
-    $.ajax({
+    success: function success(result) {
+      alert(result);
+    },
 
-        url:"",
-        type:"POST",
-        data:{
-
-        },
-
-        success: function success (result){
-
-            alert(result);
-        },
-
-        error: function error (error){
-
-
-        }
-
-
-    });
-
+    error: function error(error) {}
+  });
 }

@@ -28,7 +28,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Niconne&amp;subset=latin-ext" rel="stylesheet">
 <!-- //online-fonts -->
-
+<script src="js/ajax.js"></script>
 </head>
 	
 <body>
@@ -80,16 +80,16 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<h2>Ajouter une Voiture</h2>
 			<div class="contact-form">
 				<h4>Ajouter une Location</h4>
-				<form action="#" method="post">
+				<div>
 					<div class="col-md-6 form-left">
-						<input id="voiture" type="text" placeholder="Marque" name="text" required="">
+						<input id="voiture" type="text" placeholder="Marque" name="voiture" required="">
 					</div>
 					<div class="col-md-6 form-right">
 						<input id="immat" class="immat" type="text" name="immat" placeholder=" immat 00-000-00" required="">
 					</div>
 				
-						<input type="submit" value="SUBMIT" >
-				</form>
+						<input onclick="creationVoiture()" type="button" value="ENVOYER" >
+				</div>
 			</div>
 		</div>
 		
