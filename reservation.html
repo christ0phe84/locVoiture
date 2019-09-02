@@ -72,21 +72,22 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<div class="container">
 			<h2>Réservation</h2>
 			<div class="contact-form">
-				<h4>Get in Touch</h4>
+				<h4>Inscription/Réservation</h4>
 				<form action="#" method="post">
 					<div class="col-md-6 form-left">
-						<input type="text" placeholder="Name" name="text" required="">
-						<input type="text" placeholder="Surname" name="text" required="">
+						<input  id='nom'type="text" placeholder="Name" name="text" required="">
+						<input id='prenom' type="text" placeholder="Surname" name="text" required="">
+						<input id="email" type="email" name="email" placeholder="Email" required="">
 					</div>
 					<div class="col-md-6 form-right">
-						<input class="email" type="email" name="email" placeholder="Email" required="">
-						<input class="email" type="text" name="debut" placeholder="Du" required="">
-						<input class="email" type="text" name="fin" placeholder="Au" required="">
+						<input id="voiture" type="text" name="voiture" placeholder="vehicule" required="">
+						<input id="debut" type="text" name="debut" placeholder="Du" required="">
+						<input id="fin" type="text" name="fin" placeholder="Au" required="">
 					</div>
 					<div class="clearfix"> </div>
 						<input class="" type="text" placeholder="Phone" name="phone" required="">
 						
-						<input type="submit" value="SUBMIT" >
+						<input onclick="reservation() " type="button" value="SUBMIT" >
 				</form>
 			</div>
 		</div>
