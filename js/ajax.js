@@ -16,9 +16,16 @@ function creationVoiture() {
 
 function reservation() {
   $.ajax({
-    url: "",
+    url: "http://localhost/location.php",
     type: "POST",
-    data: {},
+    data: {
+      nom: $('#nom').val(),
+      prenom: $('#prenom').val(),
+      mail: $('#email').val(),
+      voiture: $('#voiture').val(),
+      dateDebut: $('#debut').val(),
+      dateFin: $('#fin').val(),
+    },
 
     success: function success(result) {
       alert(result);
