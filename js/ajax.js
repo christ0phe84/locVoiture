@@ -16,7 +16,7 @@ function creationVoiture() {
 
 function reservation() {
   $.ajax({
-    url: "http://localhost/location.php",
+    url: "http://localhost/reservation.php",
     type: "POST",
     data: {
       nom: $('#nom').val(),
